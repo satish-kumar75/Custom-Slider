@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.slider {
+    .MuiSlider-rail {
+        color: #e4e7ec;
+    }
+
+    .MuiSlider-mark {
+        color: #e4e7ec;
+    }
+
+    .MuiSlider-thumb:hover,
+    .Mui-focusVisible {
+        box-shadow: 0px 0px 6px 3px #9747ff8f !important;
+    }
+
+    .MuiSlider-thumb::before {
+        width: 50%;
+        height: 50%;
+        left: 27%;
+        background-color: #fff;
+    }
+}
+
+.heading {
+    font-size: clamp(14px, 4vw, 20px) !important;
+}
+
+.para {
+    font-size: clamp(12px, 2vw, 16px) !important;
+
+}
+
+.credit {
+    span:nth-child(1) {
+        font-size: clamp(10px, 3vw, 16px);
+    }
+
+    span:nth-child(2) {
+        font-size: clamp(8px, 2vw, 14px);
+        /* line-height: 8px; */
+    }
 }
