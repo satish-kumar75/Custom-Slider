@@ -17,7 +17,7 @@ To use the `AutoTopUp` component in your project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/satish-kumar75/Custom-Slider
+   git clone https://github.com/satish-kumar75/Custom-Slider.git
    ```
 
 2. Install the dependancy:
