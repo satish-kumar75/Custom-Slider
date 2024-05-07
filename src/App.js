@@ -1,6 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
-import AutoTopUp from "./AutoTopUp";
+import AutoTopUp from "./components/AutoTopUp";
 
 function App() {
   return (

@@ -40,7 +40,9 @@ function AutoTopUp() {
     <div className="flex items-center justify-center min-h-screen p-5">
       <div className="max-w-screen-md shadow-xl rounded-lg p-10">
         <div className="flex gap-3 items-center">
-          <Typography variant="h6" className="heading">Setup Auto Top-up</Typography>
+          <Typography variant="h6" className="heading">
+            Setup Auto Top-up
+          </Typography>
           <CustomSwitch
             checked={autoTopUpEnabled}
             onChange={handleToggleChange}
