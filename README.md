@@ -1,52 +1,46 @@
-![Auto Top-up React Component](./public/readme.png)
+# Getting Started with Create React App
 
-# Auto Top-up React Component
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This React component enables setting up auto top-up functionality for a credit system. Users can toggle auto top-up, select a credit amount using a slider, and confirm the auto-purchase of credits.
+## Available Scripts
 
-## Table of Contents
+In the project directory, you can run:
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Example](#example)
+### `npm start`
 
-## Installation
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-To use the `AutoTopUp` component in your project, follow these steps:
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-1. Clone the repository:
+### `npm test`
 
-   ```bash
-   git clone https://github.com/satish-kumar75/Custom-Slider.git
-   ```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-2. Install the dependancy:
+### `npm run build`
 
-   ```bash
-   npm install
-   ```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-3. Run the server
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-   ```bash
-   npm start
-   ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-4. Go to the `localhost:3000` to see the output
+### `npm run eject`
 
-## Example
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-```bash
-    import React from 'react';
-import AutoTopUp from './AutoTopUp';
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-function App() {
-  return (
-    <div className="App">
-      <AutoTopUp />
-    </div>
-  );
-}
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-export default App;
-```
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).

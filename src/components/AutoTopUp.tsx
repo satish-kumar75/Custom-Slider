@@ -12,14 +12,14 @@ const creditOptions = [
 ];
 
 function AutoTopUp() {
-  const [autoTopUpEnabled, setAutoTopUpEnabled] = useState(true);
-  const [sliderValue, setSliderValue] = useState(1);
+  const [autoTopUpEnabled, setAutoTopUpEnabled] = useState<boolean>(true);
+  const [sliderValue, setSliderValue] = useState<number>(1);
 
-  const handleSliderChange = (event, newValue) => {
-    setSliderValue(newValue);
+  const handleSliderChange = (event: Event, newValue: number | number[]) => {
+    setSliderValue(newValue as number);
   };
 
-  const handleToggleChange = (event) => {
+  const handleToggleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setAutoTopUpEnabled(event.target.checked);
   };
 
@@ -28,11 +28,11 @@ function AutoTopUp() {
       (option) => option.value === sliderValue
     );
     if (selectedCredit) {
-      alert(
+      console.log(
         `Selected credit amount: ${selectedCredit.label} credits for $${selectedCredit.price}`
       );
     } else {
-      alert("Please select a credit amount.");
+      console.log("Please select a credit amount.");
     }
   };
 

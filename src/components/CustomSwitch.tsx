@@ -2,9 +2,9 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Switch from "@mui/material/Switch";
+import Switch, { SwitchProps } from "@mui/material/Switch";
 
-const IOSSwitch = styled((props) => (
+const IOSSwitch = styled((props: SwitchProps) => (
   <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
 ))(({ theme }) => ({
   width: 38,
@@ -55,13 +55,19 @@ const IOSSwitch = styled((props) => (
   },
 }));
 
-const CustomSwitch = ({ checked, onChange }) => {
+interface CustomSwitchProps {
+  checked: boolean;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+const CustomSwitch: React.FC<CustomSwitchProps> = ({ checked, onChange }) => {
   return (
     <FormGroup>
       <FormControlLabel
         control={
           <IOSSwitch checked={checked} onChange={onChange} sx={{ m: 1 }} />
         }
+        label=""
       />
     </FormGroup>
   );
